@@ -26,6 +26,16 @@ class CashRegister
     end
   end
   
+  def items
+    items = [] 
+    @items.each do |item|
+      item[:quantity].times do 
+        items << item[:title]
+      end
+    end
+    items
+  end
+  
   
  
  
