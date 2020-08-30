@@ -9,7 +9,7 @@ class CashRegister
   end
   
   def add_item(title, price, quantity = 1)
-    biding
+    binding.pry
     item = {title: title, price: price.to_f, quantity: quantity}
   end
  
