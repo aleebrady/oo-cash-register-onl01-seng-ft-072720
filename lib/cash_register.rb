@@ -28,8 +28,8 @@ class CashRegister
   
   def items
     items = [] 
+    binding.pry
     @items.each do |item|
-      binding.pry
       item[:quantity].times do 
         items << item[:title]
       end
