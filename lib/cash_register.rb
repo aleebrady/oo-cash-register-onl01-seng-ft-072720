@@ -12,7 +12,7 @@ class CashRegister
   def add_item(title, price, quantity = 1)
     item = {title: title, price: price.to_f, quantity: quantity}
     @total += item[:price] * item[:quantity]
-    @itmes << item
+    item
   end
   
   
@@ -29,6 +29,7 @@ class CashRegister
   def items
     items = [] 
     @items.each do |item|
+      binding.pry
       item[:quantity].times do 
         items << item[:title]
       end
