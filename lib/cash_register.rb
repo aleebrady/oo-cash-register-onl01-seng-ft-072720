@@ -9,7 +9,8 @@ class CashRegister
   end
   
   def add_item(title, price, quantity = 1)
-    
+    biding
+    item = {title: title, price: price.to_f, quantity: quantity}
   end
  
  
