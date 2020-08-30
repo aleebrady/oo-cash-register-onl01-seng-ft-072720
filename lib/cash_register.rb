@@ -12,7 +12,7 @@ class CashRegister
   def add_item(title, price, quantity = 1)
     item = {title: title, price: price.to_f, quantity: quantity}
     @total += item[:price] * item[:quantity]
-    item
+    @itmes << item
   end
   
   
@@ -33,7 +33,7 @@ class CashRegister
         items << item[:title]
       end
     end
-     return @items
+     return items
   end
   
   
