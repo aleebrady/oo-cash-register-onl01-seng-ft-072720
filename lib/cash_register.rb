@@ -28,7 +28,6 @@ class CashRegister
   
   def items
     items = [] 
-    binding.pry
     @items.each do |item|
       item[:quantity].times do 
         items << item[:title]
