@@ -33,7 +33,7 @@ class CashRegister
         items << item[:title]
       end
     end
-    items
+     return items
   end
   
   
